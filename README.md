@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -72,3 +73,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 =======
 # Bio-DNA-Analyzer
 >>>>>>> 94274a40d4344690daa0b79d36d6dc9720a8a5d3
+=======
+
+# Bio-DNA-Analyzer
+
+>>>>>>> origin/main
+>>>>>>> 436717b66da59b6c17c09a09d4c51f9926bbaaca
