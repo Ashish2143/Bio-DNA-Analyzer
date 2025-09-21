@@ -28,5 +28,6 @@
 
 ### 1. Clone the repository
 ```bash
+web site link https://ashish2143.github.io/Bio-DNA-Analyzer/
 git clone https://github.com/Ashish2143/Bio-DNA-Analyzer.git
 cd Bio-DNA-Analyzer
