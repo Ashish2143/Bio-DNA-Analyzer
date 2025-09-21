@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Bio-DNA-Analyzer/static/css/main.e6c13ad2.css",
+    "main.js": "/Bio-DNA-Analyzer/static/js/main.b6ca8b70.js",
+    "index.html": "/Bio-DNA-Analyzer/index.html",
+    "main.e6c13ad2.css.map": "/Bio-DNA-Analyzer/static/css/main.e6c13ad2.css.map",
+    "main.b6ca8b70.js.map": "/Bio-DNA-Analyzer/static/js/main.b6ca8b70.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.b6ca8b70.js"
+  ]
+}
