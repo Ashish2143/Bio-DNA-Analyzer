@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
+
+// Components
+import MainPage from "./components/MainPage";
+import Upload from "./components/Upload";
+import Dashboard from "./components/Dashboard";
+import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Contact from "./components/Contact";
 
 function App() {
+  const [uploadedFile, setUploadedFile] = useState(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      {/* Navbar stays on all pages */}
+      <Navbar />
+
+      {/* AnimatePresence for smooth page transitions */}
+      <AnimatePresence mode="wait">
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route
+            path="/upload"
+            element={<Upload uploadedFile={uploadedFile} setUploadedFile={setUploadedFile} />}
+          />
+          <Route
+            path="/dashboard"
+            element={<Dashboard uploadedFile={uploadedFile} />}
+          />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </AnimatePresence>
+    </Router>
   );
 }
 
